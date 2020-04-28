@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/stortTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:padding="5dp"
+                    android:maxLines="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Tilte" />
+
+
+                <ImageView
+                    android:src="@drawable/button_bg_round"
+                    android:id="@+id/storyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:id="@+id/StoryTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:padding="5dp"
+                        android:textColor="#0f0f0f"
+                        android:minLines="4"
+                        android:text="Story...........
+....." />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>

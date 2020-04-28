@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadStory">
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType=""
+        android:background="@drawable/edittext"
+        android:hint="Story Title" />
+
+    <EditText
+        android:background="@drawable/edittext"
+        android:id="@+id/edit_text_story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="10dp"
+        android:lines="10"
+        android:inputType=""
+        android:layout_margin="10dp"
+        android:hint="Story" />
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_choose_image" />
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@drawable/custombutton"
+        android:text="Browse" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+    android:textColor="#fff"
+    android:background="@drawable/custombutton"
+        android:text="Upload" />
+</LinearLayout>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/image_view" />
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/text_view_show_upload"
+        android:layout_width="106dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_upload"
+        android:layout_marginEnd="15dp"
+        android:text="Show Upload"
+        android:textSize="16sp"
+        android:gravity="center"/>
+</LinearLayout>
+
+</ScrollView>
